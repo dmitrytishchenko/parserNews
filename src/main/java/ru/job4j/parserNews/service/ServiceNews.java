@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 import ru.job4j.parserNews.model.News;
+import ru.job4j.parserNews.repository.Storage;
 
 import java.util.List;
 import java.util.Optional;
@@ -11,7 +12,7 @@ import java.util.Optional;
 @Service
 public class ServiceNews implements NewsService {
     @Autowired
-    private JpaRepository store;
+    private Storage store;
 
 
     @Override
